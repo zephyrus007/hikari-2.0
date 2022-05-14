@@ -1,10 +1,10 @@
 module.exports = {
-name: "enter",
+name: "exit",
 code:
 `
 $deleteCommand
 
-**$username** has entered the chat <:Dw_anime_lurking2:967808131000315974>
+**$username** has exited the chat <:Dw_anime_wha:959152335018422362>
 
 $onlyForRoles[844137698519678977;908379849352175653;$getVar[cross] you don't have access to this command, check <#974560781632946217>]
 
