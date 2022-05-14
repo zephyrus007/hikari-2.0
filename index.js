@@ -1,8 +1,26 @@
-require('dotenv').config();
+const keepAlive = require('./server.js');
 
-const aoijs = require('aoi.js'); 
-const config = require('./config.js'); 
-const bot = new aoijs.Bot(config.Bot);
+const aoijs = require('aoi.js')
+const bot = new aoijs.Bot({
+token: process.env.TOKEN,
+prefix: ['$getServerVar[prefix]', 'h2'],
+intents: 'all',
+suppressAllErrors: true,
+   respondOnEdit: {
+        commands: true,
+        alwaysExecute: true,
+        time: 60000
+   },
+database: {
+        type:'default',
+        db: require('dbdjs.db'),
+        path: './database/',
+        tables: ['main'],
+        promisify: false
+    }
+});
+
+
 const fs = require('fs');
 
 const voice = new aoijs.Voice(bot, {
@@ -24,7 +42,7 @@ const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd, "./commands/")
 
 
-/
+
 loader.setColors({
   walking: ["blink", "dim", "fgWhite"],
   failedWalking: {
@@ -51,8 +69,24 @@ loader.setColors({
 })
 
 
-
-const files = fs.readdirSync('./events').filter(file => file.endsWith('js'))
-files.forEach( x => {
+const funcs = fs.readdirSync('./events').filter(file => file.endsWith('js'))
+funcs.forEach( x => {
 	require(`./events/${x}`)(bot)
 });
+
+
+
+
+//My Functions
+
+/*
+bot.functionManager.createCustomFunction({
+  name: "$ut",
+  type: "aoi.js",
+  code: `
+$userTag
+`
+}) 
+*/
+
+keepAlive()

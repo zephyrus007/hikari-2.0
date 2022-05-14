@@ -1,6 +1,6 @@
 module.exports = {
 	Bot: {
-		token: process.env.TOKEN,
+		token: 'e',
 		prefix: ["hikari", '$getServerVar[prefix]'],
 		intents: "all" , 
     suppressAllErrors: true,

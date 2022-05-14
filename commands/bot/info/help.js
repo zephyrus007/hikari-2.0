@@ -1,20 +1,47 @@
 module.exports =
   {
     name: "help",
+    $if: "v4",
     code: `
+$if[$authorID==$botOwnerID]
+
 $author[1;$userName[$clientID];$userAvatar[$clientID]]
-$description[1;Default Prefix: \`w.\`]
+$title[1;Commands list || Developer]
+$description[1;Server Prefix: \`$getServerVar[prefix]\`]
 
-$addField[1;Perks;\`booster\`, \`investor\`]
+$addField[1;・utility commands;\`avatar\` \`divider\`]
 
-$addField[1;Information;\`appeal\`, \`color\`, \`help\`, \`ping\`, \`uptime\`, \`rules\`, \`verifyinfo\`]
+$addField[1;・music commands;\`join\` \`leave\` \`nowplaying\` \`play\` \`pause\` \`resume\`]
+
+$addField[1;・info commands;\`help\` \`ping\` \`uptime\` \`stats\`]
+
+$addField[1;・developer commands;\`eval\` \`exec\` \`git\` \`refresh\`]
+
+$addField[1;・admin commands;\`disable-heistar\` \`enable-heistar\` \`set-armsg\`]
 
 $color[1;$getVar[ecolor]]
 $footer[1;Req by $usertag]
 $addTimestamp[1]
-$addButton[1;Vote;5;https://top.gg/servers/840506530809643059/vote]
-$addButton[1;.gg/dworld;5;https://discord.gg/dworld]
 
-$onlyPerms[admin;]
+$else
+
+$author[1;$userName[$clientID];$userAvatar[$clientID]]
+$title[1;Commands list]
+$description[1;Server Prefix: \`$getServerVar[prefix]\`]
+
+$addField[1;・utility commands;\`avatar\` \`divider\`]
+
+$addField[1;・music commands;\`join\` \`leave\` \`nowplaying\` \`play\` \`pause\` \`resume\`]
+
+$addField[1;・info commands;\`help\` \`ping\` \`uptime\` \`stats\`]
+
+$addField[1;・admin commands;\`disable-heistar\` \`enable-heistar\` \`set-armsg\`]
+
+$color[1;$getVar[ecolor]]
+$footer[1;Req by $usertag]
+$addTimestamp[1]
+
+$endIf
+
 `
   }

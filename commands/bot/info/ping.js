@@ -8,6 +8,5 @@ $footer[1;Request by $usertag]
 $addTimestamp[1]
 $color[1;$getVar[ecolor]]
 $reply[$messageID;no]
-$onlyPerms[admin;]
 `
 }
