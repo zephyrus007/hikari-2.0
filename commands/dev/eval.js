@@ -3,10 +3,6 @@ module.exports = {
   code: `
 $eval[$message;yes;yes;yes;yes]
 
-$onlyForIDs[$botOwnerID;
-	{
-		"content":"Non."
-	}
-]
+$onlyForIDs[$botOwnerID;$getVar[cross] only \`$userTag[$botOwnerID]\` can use this. {delete:5s}]
 `
 }
