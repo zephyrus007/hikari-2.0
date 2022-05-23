@@ -5,9 +5,9 @@ code:
 
 $addCmdReactions[<:org_checkmark:966229530106810388>]
 
-$channelSendMessage[$get[id];$message]
+$channelSendMessage[$get[id];$message[2]]
 
-$let[id;$mentionedChannels[1]]
+$let[id;$findChannel[$message[1];yes]]
 
 $onlyIf[$message[2]!=;$getVar[star] Provide a message. {delete:5s}]
 
