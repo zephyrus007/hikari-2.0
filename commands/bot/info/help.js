@@ -15,6 +15,8 @@ $addField[1;・music commands;\`join\` \`leave\` \`nowplaying\` \`play\` \`pause
 
 $addField[1;・mod commands;\`lock\` \`unlock\` \`unviewlock\` \`viewlock\`]
 
+$addField[1;・fun commands;\`enter\` \`exit\` \`ppsize\`]
+
 $addField[1;・info commands;\`help\` \`ping\` \`uptime\` \`stats\`]
 
 $addField[1;・developer commands;\`eval\` \`exec\` \`git\` \`refresh\`]
@@ -35,8 +37,9 @@ $addField[1;・utility commands;\`avatar\` \`divider\`]
 
 $addField[1;・music commands;\`join\` \`leave\` \`nowplaying\` \`play\` \`pause\` \`resume\`]
 
-
 $addField[1;・mod commands;\`lock\` \`unlock\` \`unviewlock\` \`viewlock\`]
+
+$addField[1;・fun commands;\`enter\` \`exit\` \`ppsize\`]
 
 $addField[1;・info commands;\`help\` \`ping\` \`uptime\` \`stats\`]
 
