@@ -1,6 +1,6 @@
 module.exports = {
-  name: "<@951544887810097182>",
-  aliases: "<@!951544887810097182>",
+  name: "<@974966130106052628>",
+  aliases: "<@!974966130106052628>",
   nonPrefixed: true,
   code: `
 $title[1;Hello! I'm $userName[$clientID]] 

@@ -14,7 +14,7 @@ $addField[1;Text Channels;\`$djsEval[message.guild.channels.cache.filter(channel
 ;yes]
 $addField[1;Server ID;\`$guildID\`;yes]
 $addField[1;Creation date;\`$creationDate[$guildID;date]\`;yes]
-$addField[1;Owner;$userTag[$ownerID];yes]
+$addField[1;Owner;\`$userTag[$ownerID]\`;yes]
 
 
 $addTimestamp[1]

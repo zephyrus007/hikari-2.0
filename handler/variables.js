@@ -16,7 +16,10 @@ module.exports = (bot) => {
     staff_role: "908379849352175653",
 
     //goal
-    goal_count: "0"
+    goal_count: "0",
+
+    //welcomer 
+    welcomer: ""
     
   
 

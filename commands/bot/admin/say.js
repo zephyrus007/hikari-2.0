@@ -3,9 +3,10 @@ name: "say",
 code:
 `
 
-$addCmdReactions[<:org_checkmark:966229530106810388>]
+$addCmdReactions[<:org_checkmark:966229530106810388>
+]
 
-$channelSendMessage[$get[id];$message[2]]
+$channelSendMessage[$get[id];$replaceText[$message;$message[1];;1]]
 
 $let[id;$findChannel[$message[1];yes]]
 
