@@ -10,7 +10,7 @@ $description[1;<@!$findUser[$message;yes]>]
   Server admin
   $else
   $userPerms[$findUser[$message;yes];, ]
-  $endif;yes] 
+  $endif;no] 
 
   
 $addField[1;Joined Discord; \`$splitText[1]\`;yes]

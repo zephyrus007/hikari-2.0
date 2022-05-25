@@ -3,23 +3,28 @@ module.exports =
     name: "help",
     $if: "v4",
     code: `
+$deleteIn[10m]
+
 $if[$authorID==$botOwnerID]
 
 $author[1;$userName[$clientID];$userAvatar[$clientID]]
 $title[1;Commands list]
 $description[1;Server Prefix: \`$getServerVar[prefix]\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・utility commands;\`avatar\` \`divider\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・utility commands;\`avatar\` \`bans\` \`divider\` \`esnipe\` \`snipe\` \`whois\`]
 
 $addField[1;<a:dwr_sparkle:961913682751803442>・music commands;\`join\` \`leave\` \`nowplaying\` \`play\` \`pause\` \`resume\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・mod commands;\`lock\` \`unlock\` \`unviewlock\` \`viewlock\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・mod commands;\`ban\` \`lock\` \`unban\` \`unlock\` \`unviewlock\` \`viewlock\`]
+
+
+$addField[1;<a:dwr_sparkle:961913682751803442>・info commands;\`help\` \`ping\` \`uptime\` \`serverinfo\` \`servericon\` \`stats\`]
 
 $addField[1;<a:dwr_sparkle:961913682751803442>・fun commands;\`enter\` \`exit\` \`fact\` \`ppsize\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・info commands;\`help\` \`ping\` \`uptime\` \`stats\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・action commands;\`baka\` \`bite\` \`cuddle\` \`feed\` \`highfive\` \`hug\` \`kiss\` \`pat\` \`poke\` \`slap\` \`tick\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・admin commands;\`disable-heistar\` \`enable-heistar\` \`say\` \`set-armsg\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・admin commands;\`disable-heistar\` \`enable-heistar\` \`say\` \`set-armsg\` \`set-prefix\`]
 
 $addField[1;<a:dwr_sparkle:961913682751803442>・developer commands;\`eval\` \`exec\` \`git\` \`refresh\`]
 
@@ -37,21 +42,24 @@ $addTimestamp[1]
 
 $else
 
-$author[1;$userName[$clientID];$userAvatar[$clientID]]
+$$author[1;$userName[$clientID];$userAvatar[$clientID]]
 $title[1;Commands list]
 $description[1;Server Prefix: \`$getServerVar[prefix]\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・utility commands;\`avatar\` \`divider\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・utility commands;\`avatar\` \`bans\` \`divider\` \`esnipe\` \`snipe\` \`whois\`]
 
 $addField[1;<a:dwr_sparkle:961913682751803442>・music commands;\`join\` \`leave\` \`nowplaying\` \`play\` \`pause\` \`resume\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・mod commands;\`lock\` \`unlock\` \`unviewlock\` \`viewlock\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・mod commands;\`ban\` \`lock\` \`unban\` \`unlock\` \`unviewlock\` \`viewlock\`]
+
+
+$addField[1;<a:dwr_sparkle:961913682751803442>・info commands;\`help\` \`ping\` \`uptime\` \`serverinfo\` \`servericon\` \`stats\`]
 
 $addField[1;<a:dwr_sparkle:961913682751803442>・fun commands;\`enter\` \`exit\` \`fact\` \`ppsize\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・info commands;\`help\` \`ping\` \`uptime\` \`stats\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・action commands;\`baka\` \`bite\` \`cuddle\` \`feed\` \`highfive\` \`hug\` \`kiss\` \`pat\` \`poke\` \`slap\` \`tickle\`]
 
-$addField[1;<a:dwr_sparkle:961913682751803442>・admin commands;\`disable-heistar\` \`enable-heistar\` \`say\` \`set-armsg\`]
+$addField[1;<a:dwr_sparkle:961913682751803442>・admin commands;\`disable-heistar\` \`enable-heistar\` \`say\` \`set-armsg\` \`set-prefix\`]
 
 $reply
 

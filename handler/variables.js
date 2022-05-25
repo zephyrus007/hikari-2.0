@@ -19,8 +19,20 @@ module.exports = (bot) => {
     goal_count: "0",
 
     //welcomer 
-    welcomer: ""
-    
+    welcomer: "",
+
+    //snipe
+    snipe_msg: "",
+    snipe_author: "",
+    snipe_channel: "",
+    snipe_t: "",
+
+    //esnipe
+    esnipe_msg: "",
+    nesnipe_msg: "",
+    esnipe_author: "",
+    esnipe_channel: "",
+    esnipe_t: ""
   
 
 })
