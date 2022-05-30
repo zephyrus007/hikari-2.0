@@ -2,12 +2,16 @@ module.exports = [{
     name: "ping-flashgiveaway",
     aliases: ['ping-flashgaw'],
     $if : "v4",
-    code: `$if[$message==]
-<a:aura_star69:940897948596862986>  <@&841920158934761536> new giveaways! 
+    code: `
+$if[$message==]
+$getVar[star] <@&841920158934761536> new giveaways! 
+
 $addButton[1;vote us;5;https://top.gg/servers/840506530809643059/vote;no;]
 $addButton[1;donate;5;https://discord.com/channels/840506530809643059/841943069020782612/948214320037265479;no;]
-  $else
-<a:aura_star69:940897948596862986> <@&841920158934761536> new giveaways!
+
+$else
+
+$getVar[star]<@&841920158934761536> new giveaways!
 $title[1;message:]
 $description[1; $message]
 $footer[1;Requested by $userTag]

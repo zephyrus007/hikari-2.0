@@ -4,8 +4,8 @@ module.exports = [{
 	code: `
 	$deleteCommand
 $title[1;𓂃 ៸៸ quick roles *!*]
-$description[1;<:yellow_1:960783704660246558> - <@&841682859604967464>
-<:yellow_2:960783765775474688> - <@&842235119691366400>
+$description[1;<:yellow_1:960783704660246558> - <@&979057332027793448>
+<:yellow_2:960783765775474688> - <@&979057048077623366>
 <:yellow_3:960783770368245811> - <@&843500195795042334>
 <:yellow_4:960783775594336256> - <@&848979199184339015>
 <:yellow_5:960783779440525312> - <@&843509896149729281>]
@@ -27,17 +27,17 @@ $onlyPerms[admin;]
 	$if: 'v4',
 	prototype: 'button',
 	code: `
-$if[$hasRoles[$guildid;$authorId;841682859604967464]==true]
+$if[$hasRoles[$guildid;$authorId;979057332027793448]==true]
 
-$takeRole[$guildID;$authorID;841682859604967464]
+$takeRole[$guildID;$authorID;979057332027793448]
 
-$interactionReply[;{newEmbed:{title:Success!}{description:Successfully removed <@&841682859604967464> from you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
+$interactionReply[;{newEmbed:{title:Success!}{description:Successfully removed <@&979057332027793448> from you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
 
 $else
 
-$giveRole[$guildID;$authorID;841682859604967464]
+$giveRole[$guildID;$authorID;979057332027793448]
 
-$interactionReply[;{newEmbed:{title:Success!}{description:Successfully added <@&841682859604967464> to you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
+$interactionReply[;{newEmbed:{title:Success!}{description:Successfully added <@&979057332027793448> to you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
 
 
 $endif 
@@ -50,16 +50,16 @@ $endif 
 	$if: 'v4',
 	prototype: 'button',
 	code: `
-$if[$hasRoles[$guildid;$authorId;842235119691366400]==true]
-$takeRole[$guildID;$authorID;842235119691366400]
+$if[$hasRoles[$guildid;$authorId;979057048077623366]==true]
+$takeRole[$guildID;$authorID;979057048077623366]
 
-$interactionReply[;{newEmbed:{title:Success!}{description:Successfully removed <@&842235119691366400> from you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
+$interactionReply[;{newEmbed:{title:Success!}{description:Successfully removed <@&979057048077623366> from you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
 
 $else
 
-$giveRole[$guildID;$authorID;842235119691366400]
+$giveRole[$guildID;$authorID;979057048077623366]
 
-$interactionReply[;{newEmbed:{title:Success!}{description:Successfully added <@&842235119691366400> to you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
+$interactionReply[;{newEmbed:{title:Success!}{description:Successfully added <@&979057048077623366> to you.}{color:2f3136}{timestamp:ms}{footer:$userTag}};;;;yes]
 
 $endif 
 

@@ -1,6 +1,7 @@
 module.exports = (bot) => {
   
 bot.onMessage();
+bot.onJoin(); 
 bot.onInteractionCreate();
 bot.onTypingStart();
 bot.onRateLimit();

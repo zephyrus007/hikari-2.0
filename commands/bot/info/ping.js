@@ -2,11 +2,12 @@ module.exports = {
   name : "ping",
   code: `
 $title[1;Pong!]
-$addField[1;Message Send;\`$messagepingms\`]
-$addField[1;API Latency;\`$pingms\`]
-$footer[1;Request by $usertag]
+$description[1;**— websocket**
+ʚ \`$pingms\`
+**— database**
+ʚ \`$dbpingms\`]
+$color[1;$getvar[ecolor]]
 $addTimestamp[1]
-$color[1;$getVar[ecolor]]
 $reply[$messageID;no]
 `
 }

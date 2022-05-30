@@ -1,5 +1,5 @@
 module.exports = [{
-name: "test",
+type: "join",
 code: `
 
 $editMessage[$get[msg];{
@@ -22,7 +22,7 @@ $let[msg;$sendMessage[{
 "components" : "{actionRow:{button:﹒welcome:2:welcome_$authorID:false:<:bunny_love:962942580499300372>}}"
 };yes]]
 
-$onlyForIDs[931956193939849337;$botOwnerID;Its not for you daddy {delete:10s}]
+$useChannel[$getServerVar[welcome_channel]]
 
 `
 },
@@ -32,15 +32,16 @@ prototype: "button",
 code:`
 
 
-$interactionReply[**$interactionData[author.tag]** has welcomed **$userTag[$get[id]]**;]
+$interactionReply[<a:dwr_star:959068679205691512> **$interactionData[author.tag]** has welcomed **$userTag[$get[id]]**;]
 
 $let[msg;$interactionData[message.id]]
+
+$onlyForRoles[894149947274977345;908379849352175653;]
 
 $onlyif[$get[customId]==welcome;]
 
 $let[id;$advancedTextSplit[$interactionData[customId];_;2]]
 $let[customId;$advancedTextSplit[$interactionData[customId];_;1]]
-
 
 `                    
               
