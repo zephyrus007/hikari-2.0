@@ -31,7 +31,7 @@ $addField[2;・Single Booster Perks;<a:hik_spark2:987022866962858016> 3x amari m
 $color[1;$getVar[ecolor]]
 $color[2;$getVar[ecolor]]
 
-$image[2;https://media.discordapp.net/attachments/961118101695520789/961118213687635988/unknown.png?width=994&height=39]
+$image[2;https://media.discordapp.net/attachments/976047400210804747/978911011706896394/unknown.png]
 $onlyPerms[admin;]
 `
   
