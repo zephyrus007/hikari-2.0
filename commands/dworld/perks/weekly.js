@@ -12,9 +12,8 @@ module.exports = {
 <a:hik_spark2:987022866962858016> access to ..afk in melon bot
 <a:hik_spark2:987022866962858016> access to fun commands in carl bot
 <a:hik_spark2:987022866962858016> get <@&982633381131067413> role [ hoisted ]
-<a:hik_spark2:987022866962858016> get access to ﹒dank<a:hik_spark2:987022866962858016>memer⁴ with 4x multi .]  
+<a:hik_spark2:987022866962858016> get access to ﹒dank-memer⁴ with 4x multi .]  
     
-
     
 $color[1;$getVar[ecolor]]
 $color[2;$getVar[ecolor]]
