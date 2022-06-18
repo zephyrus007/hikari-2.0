@@ -18,6 +18,5 @@ opusscript        - 0.0.8
 # Purpose
 Custom utility bot used in <a href="https://discord.gg/dworld">Dankers World Community</a>
 ## Community Invite
-[![DiscordBanner](https://invidget.switchblade.xyz/dworld)](https://discord.gg/dworld)
 
 [Community Server](https://discord.gg/dworld) - Dankers World Invite
