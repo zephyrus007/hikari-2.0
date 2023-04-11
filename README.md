@@ -17,6 +17,6 @@ opusscript        - 0.0.8
 ---
 # Purpose
 Custom utility bot used in <a href="https://discord.gg/dworld">Dankers World Community</a>
-## Community Invite
 
-[Community Server](https://discord.gg/dworld) - Dankers World Invite
+# Outdated
+This repo is no longer maintained.
